@@ -1,0 +1,32 @@
+flowchart TD
+    A[Inspiration & Idea Generation] --> B[Worldbuilding]
+    B --> C[Character Development]
+    C --> D[Conflict & Stakes]
+    D --> E[Plot Structuring]
+
+    E --> F[Scene Drafting]
+    F --> G[Dialogue & Voice]
+    G --> H[Theme Reinforcement]
+
+    H --> I{Story Working?}
+
+    I -- No --> J[Revise Plot / Characters / Pacing]
+    J --> F
+
+    I -- Yes --> K[Editing & Refinement]
+    K --> L[Feedback / Beta Readers]
+    L --> M[Final Revision]
+    M --> N[Publishing or Sharing]
+
+    subgraph Creative_Loop
+        F
+        G
+        H
+    end
+
+    subgraph Development_Phase
+        B
+        C
+        D
+        E
+    end
