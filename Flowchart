@@ -1,0 +1,60 @@
+flowchart TD
+
+    %% =========================
+    %% GENERATIVE FICTION PROCESS
+    %% =========================
+
+    A["Inspiration & Idea Generation"]
+    B["Worldbuilding"]
+    C["Character Development"]
+    D["Conflict & Stakes"]
+    E["Plot Structuring"]
+
+    F["Scene Drafting"]
+    G["Dialogue & Voice"]
+    H["Theme Reinforcement"]
+
+    I{"Story Working?"}
+
+    J["Revise Plot / Characters / Pacing"]
+
+    K["Editing & Refinement"]
+    L["Feedback / Beta Readers"]
+    M["Final Revision"]
+    N["Publishing or Sharing"]
+
+    %% Main Flow
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    E --> F
+    F --> G
+    G --> H
+
+    H --> I
+
+    %% Decision Branches
+    I -- No --> J
+    J --> F
+
+    I -- Yes --> K
+    K --> L
+    L --> M
+    M --> N
+
+    %% Development Group
+    subgraph Development_Phase
+        B
+        C
+        D
+        E
+    end
+
+    %% Creative Iteration Group
+    subgraph Creative_Loop
+        F
+        G
+        H
+    end
